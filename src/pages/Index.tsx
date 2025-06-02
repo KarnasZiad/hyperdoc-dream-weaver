@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Search, User, Code2, GraduationCap, Briefcase, Mail, Github, Linkedin, ExternalLink, Database, Globe, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -26,8 +25,8 @@ const Index = () => {
       title: 'Technical Skills',
       type: 'list',
       content: [
-        'Frontend: React.js, TypeScript, Next.js, Tailwind CSS, HTML5, CSS3',
-        'Backend: Node.js, Express.js, Python, Django, RESTful APIs',
+        'Frontend: React.js, Angular, TypeScript, Next.js, Tailwind CSS, HTML5, CSS3',
+        'Backend: Node.js, Express.js, Spring Boot, Java EE, Python, Django, RESTful APIs',
         'Databases: PostgreSQL, MongoDB, MySQL, Redis',
         'Cloud & DevOps: AWS, Docker, Git, GitHub Actions, Vercel',
         'Mobile: React Native, Flutter (learning)',
@@ -53,8 +52,13 @@ const Index = () => {
       title: 'Education & Certifications',
       type: 'formatted',
       content: `# Current Education
-**Bachelor of Engineering in Software Engineering**
+**ENSET Mohammedia - École Normale Supérieure de l'Enseignement Technique**
+*Software Engineering Program*
 *Expected Graduation: 2025*
+
+# Previous Education
+**FST Mohammedia - Faculté des Sciences et Techniques**
+*Computer Science and Engineering*
 
 ## Relevant Coursework
 - Data Structures and Algorithms
@@ -63,12 +67,15 @@ const Index = () => {
 - Web Development Technologies
 - Computer Networks
 - System Design
+- Object-Oriented Programming (Java)
+- Enterprise Application Development
 
 ## Certifications & Learning
 - **AWS Cloud Practitioner** (In Progress)
 - **React Developer Certification** - Meta
 - **Full-Stack Web Development** - The Odin Project
 - **TypeScript Fundamentals** - Microsoft Learn
+- **Spring Boot Fundamentals** - Oracle
 
 > "Continuously learning and adapting to new technologies in the ever-evolving field of software development."`,
       icon: GraduationCap
