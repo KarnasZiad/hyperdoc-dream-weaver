@@ -19,7 +19,7 @@ const NavigationSidebar = ({ sections, activeSection, onSectionClick }: Navigati
   return (
     <aside className="w-64 sticky top-24 h-fit">
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
-        <h3 className="font-semibold text-slate-900 mb-4">Contents</h3>
+        <h3 className="font-semibold text-slate-900 mb-4">Navigation</h3>
         <nav className="space-y-2">
           {sections.map((section) => {
             const Icon = section.icon;
@@ -39,6 +39,22 @@ const NavigationSidebar = ({ sections, activeSection, onSectionClick }: Navigati
             );
           })}
         </nav>
+        
+        {/* Quick Links */}
+        <div className="mt-8 pt-6 border-t border-slate-200">
+          <h4 className="font-medium text-slate-900 mb-3 text-sm">Quick Links</h4>
+          <div className="space-y-2">
+            <Button variant="ghost" size="sm" className="w-full justify-start text-xs" asChild>
+              <a href="mailto:karnas.ziad@email.com">Email Me</a>
+            </Button>
+            <Button variant="ghost" size="sm" className="w-full justify-start text-xs" asChild>
+              <a href="https://github.com/karnasziad" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </Button>
+            <Button variant="ghost" size="sm" className="w-full justify-start text-xs" asChild>
+              <a href="https://linkedin.com/in/karnasziad" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </Button>
+          </div>
+        </div>
       </div>
     </aside>
   );
