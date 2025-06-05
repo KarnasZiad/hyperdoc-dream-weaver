@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Search, User, Code2, GraduationCap, Briefcase, Mail, Github, Linkedin, ExternalLink, Database, Globe, Server } from 'lucide-react';
+import { Search, User, Code2, GraduationCap, Briefcase, Mail, Github, Linkedin, ExternalLink, Database, Globe, Server, Brain, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,6 +20,13 @@ const Index = () => {
       type: 'text',
       content: 'I am Karnas Ziad, a passionate full-stack engineering student with a strong foundation in modern web technologies. Currently pursuing my engineering degree, I combine academic knowledge with practical experience to build innovative solutions. My expertise spans both frontend and backend development, with a focus on creating scalable and user-friendly applications.',
       icon: User
+    },
+    {
+      id: 'mindmap',
+      title: 'Skills Mindmap',
+      type: 'mindmap',
+      content: 'Interactive visualization of my technical skills and their relationships',
+      icon: Brain
     },
     {
       id: 'skills',
@@ -87,6 +95,13 @@ const Index = () => {
       content: 'Through various internships and freelance projects, I have gained practical experience in full-stack development. I have worked on real-world applications, collaborated with development teams, and delivered solutions that meet client requirements.',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop',
       icon: Server
+    },
+    {
+      id: 'commentary',
+      title: 'Professional Commentary',
+      type: 'commentary',
+      content: 'Insights, thoughts, and reflections on my journey as a software engineering student and developer.',
+      icon: MessageCircle
     },
     {
       id: 'contact',
@@ -170,8 +185,12 @@ const Index = () => {
               <>
                 {/* Hero Section */}
                 <div className="text-center py-12">
-                  <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <User className="w-16 h-16 text-white" />
+                  <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-white shadow-lg">
+                    <img 
+                      src="/lovable-uploads/9e046e5a-68e3-4ed6-a432-5f97a9eedc9c.png" 
+                      alt="Karnas Ziad"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h2 className="text-4xl font-bold text-slate-900 mb-4">
                     Karnas Ziad

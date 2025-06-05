@@ -1,9 +1,10 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import SkillsMindmap from './SkillsMindmap';
+import Commentary from './Commentary';
 
 interface Section {
   id: string;
@@ -30,6 +31,22 @@ const ContentSection = ({ section, isActive }: ContentSectionProps) => {
 
   const renderContent = () => {
     switch (section.type) {
+      case 'mindmap':
+        return (
+          <div className="space-y-4">
+            <p className="text-slate-700">{section.content as string}</p>
+            <SkillsMindmap />
+          </div>
+        );
+      
+      case 'commentary':
+        return (
+          <div className="space-y-4">
+            <p className="text-slate-700 mb-6">{section.content as string}</p>
+            <Commentary />
+          </div>
+        );
+      
       case 'list':
         return (
           <ul className="space-y-2">
